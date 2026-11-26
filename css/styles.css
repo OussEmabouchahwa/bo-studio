@@ -153,16 +153,15 @@ button.tl-link{background:none;border:0;padding:0;cursor:pointer}
 .s1 .pic img{position:static;width:100%;height:100%;object-fit:cover}
 .s1 .pic img:nth-child(3){display:none}
 
-/* a screenshot with large lettering is shown whole, on its own paper background, never cropped */
-.sheet .pic img.shot{object-fit:contain;background:var(--paper);padding-bottom:44px}
-/* the code picture keeps a strip under it for its caption, and is shown whole beside the text */
-.s2 .pic img{object-fit:contain;object-position:50% 100%;padding-bottom:44px}
+/* a picture marked "whole" is never cropped: its box takes the picture's own shape, the caption under it */
+.sheet .pic.whole{aspect-ratio:auto;min-height:0;margin-block:auto}
+.sheet .pic.whole img{position:static;display:block;width:100%;height:auto}
+.sheet .pic.whole figcaption{position:static;display:inline-block}
 
 /* ---------- work: one block per project, the picture whole and nothing on top of it ---------- */
 .plate{display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:1fr auto auto 1fr;gap:0 var(--gap);padding:clamp(64px,7vw,110px) var(--m);background:var(--night);color:var(--night-ink)}
 .plate:nth-of-type(even){background:var(--bg);color:var(--ink)}
 .plate img.full{grid-column:1 / 8;grid-row:1 / 5;align-self:center;width:100%;height:auto}
-.plate img.full.shot{background:var(--paper)}
 .plate .row,.plate .say{grid-column:9 / 13}
 .plate:nth-of-type(even) img.full{grid-column:6 / 13}
 .plate:nth-of-type(even) .row,.plate:nth-of-type(even) .say{grid-column:1 / 5}
@@ -295,7 +294,6 @@ footer .word{position:absolute;left:calc(var(--m) - .05em);bottom:0;font-size:30
   .s1 .pic{grid-template-columns:1fr}
   .plate{display:flex;flex-direction:column;gap:20px}
   .plate .row{order:-1}
-  .s2 .pic img{object-fit:cover;object-position:0 0}
   .plate .say{padding-top:0;max-width:60ch}
   .s1 .pic img:nth-child(2){display:none}
   .contact .clocks{grid-column:1 / 7}
