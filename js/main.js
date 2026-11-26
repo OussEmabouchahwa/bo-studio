@@ -5,8 +5,8 @@
   function L(){return root.lang==='fr'?'fr':'en'}
   function setLang(l){root.lang=l;document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});try{localStorage.setItem('ob-lang',l)}catch(e){}meta();translate('alt','data-fr-alt');translate('aria-label','data-fr-label');renderTicket(false);snd();heroLabel()}
   /* the tab title and description follow the language */
-  var M={en:['BO Studio · Reels, AI agents and websites','BO Studio: reels, AI agents and websites for creators, agencies and small businesses. Reels from €25, a quote within 24 hours.'],
-    fr:['BO Studio · Reels, agents IA et sites web','BO Studio\u00a0: reels, agents IA et sites web pour créateurs, agences et petites entreprises. Reels dès 25\u00a0€, devis sous 24\u00a0h.']};
+  var M={en:['BO Studio · Reels, AI agents and websites','BO Studio: reels, AI agents and websites for creators, agencies and small businesses. Reels from €15, a quote within 24 hours.'],
+    fr:['BO Studio · Reels, agents IA et sites web','BO Studio\u00a0: reels, agents IA et sites web pour créateurs, agences et petites entreprises. Reels dès 15\u00a0€, devis sous 24\u00a0h.']};
   function meta(){var m=M[L()];document.title=m[0];document.querySelector('meta[name="description"]').setAttribute('content',m[1])}
   /* picture descriptions and control names: English in the HTML, French in a data attribute */
   function translate(attr,frAttr){document.querySelectorAll('['+frAttr+']').forEach(function(el){var keep='data-en-'+attr;if(!el.hasAttribute(keep))el.setAttribute(keep,el.getAttribute(attr)||'');el.setAttribute(attr,el.getAttribute(L()==='fr'?frAttr:keep))})}
@@ -68,21 +68,21 @@
   var R={en:'2 rounds of changes',fr:'2 allers-retours de retouches'},V={en:'Vercel hosting set up',fr:'Mise en ligne Vercel'},Dm={en:'Demo before the balance',fr:'Démo avant le solde'},Q={en:'Date in the quote',fr:'Date dans le devis'};
   var D={
     video:[
-      {id:'reel',en:'Single reels',fr:'Reels à l\'unité',p:25,unit:true,time:{en:'48 h per reel',fr:'48\u00a0h par reel'},inc:R},
-      {id:'pack',en:'Pack of 8 reels per month',fr:'Pack 8 reels par mois',p:160,per:{en:'per month',fr:'par mois'},time:{en:'48 h per reel',fr:'48\u00a0h par reel'},inc:R},
-      {id:'pod',en:'1 podcast episode into 5 clips',fr:'1 épisode de podcast en 5 clips',p:90,time:Q,inc:R},
-      {id:'yt',en:'YouTube video up to 15 min',fr:'Vidéo YouTube jusqu\'à 15 min',p:70,from:1,time:Q,inc:R}
+      {id:'reel',en:'Single reels',fr:'Reels à l\'unité',p:15,unit:true,time:{en:'48 h per reel',fr:'48\u00a0h par reel'},inc:R},
+      {id:'pack',en:'Pack of 8 reels per month',fr:'Pack 8 reels par mois',p:95,per:{en:'per month',fr:'par mois'},time:{en:'48 h per reel',fr:'48\u00a0h par reel'},inc:R},
+      {id:'pod',en:'1 podcast episode into 5 clips',fr:'1 épisode de podcast en 5 clips',p:55,time:Q,inc:R},
+      {id:'yt',en:'YouTube video up to 15 min',fr:'Vidéo YouTube jusqu\'à 15 min',p:40,from:1,time:Q,inc:R}
     ],
     ai:[
-      {id:'auto',en:'Simple automation',fr:'Automatisation simple',p:150,from:1,time:{en:'3 to 7 days',fr:'3 à 7\u00a0jours'},inc:Dm},
-      {id:'assist',en:'AI assistant: email, leads, FAQ',fr:'Assistant IA\u00a0: e-mails, prospects, FAQ',p:300,from:1,time:{en:'3 to 7 days',fr:'3 à 7\u00a0jours'},inc:Dm},
-      {id:'care',en:'Monitoring and fixes',fr:'Suivi et corrections',p:30,per:{en:'per month',fr:'par mois'},nodep:1,time:{en:'After delivery',fr:'Après la livraison'},inc:{en:'Fixes when something breaks',fr:'Corrections en cas de panne'}}
+      {id:'auto',en:'Simple automation',fr:'Automatisation simple',p:90,from:1,time:{en:'3 to 7 days',fr:'3 à 7\u00a0jours'},inc:Dm},
+      {id:'assist',en:'AI assistant: email, leads, FAQ',fr:'Assistant IA\u00a0: e-mails, prospects, FAQ',p:180,from:1,time:{en:'3 to 7 days',fr:'3 à 7\u00a0jours'},inc:Dm},
+      {id:'care',en:'Monitoring and fixes',fr:'Suivi et corrections',p:18,per:{en:'per month',fr:'par mois'},nodep:1,time:{en:'After delivery',fr:'Après la livraison'},inc:{en:'Fixes when something breaks',fr:'Corrections en cas de panne'}}
     ],
     web:[
-      {id:'land',en:'Landing page',fr:'Landing page',p:250,from:1,time:{en:'About a week',fr:'Une semaine environ'},inc:V},
-      {id:'site',en:'Business site, up to 5 pages',fr:'Site vitrine, jusqu\'à 5 pages',p:450,from:1,time:Q,inc:V},
-      {id:'app',en:'Flutter mobile app',fr:'Application mobile Flutter',p:600,from:1,time:Q,inc:{en:'Built with Flutter',fr:'Développée avec Flutter'}},
-      {id:'shop',en:'Online store',fr:'Boutique en ligne',p:800,from:1,time:Q,inc:V}
+      {id:'land',en:'Landing page',fr:'Landing page',p:150,from:1,time:{en:'About a week',fr:'Une semaine environ'},inc:V},
+      {id:'site',en:'Business site, up to 5 pages',fr:'Site vitrine, jusqu\'à 5 pages',p:270,from:1,time:Q,inc:V},
+      {id:'app',en:'Flutter mobile app',fr:'Application mobile Flutter',p:360,from:1,time:Q,inc:{en:'Built with Flutter',fr:'Développée avec Flutter'}},
+      {id:'shop',en:'Online store',fr:'Boutique en ligne',p:480,from:1,time:Q,inc:V}
     ]
   };
   var st={cat:'video',id:'pack',q:4};
