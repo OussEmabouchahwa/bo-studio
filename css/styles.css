@@ -58,8 +58,8 @@ button.tl-link{background:none;border:0;padding:0;cursor:pointer}
 
 /* ---------- hero: the mark split to two corners ---------- */
 .hero{position:relative;height:100svh;min-height:680px;padding:var(--m)}
-.hero .name{position:absolute;inset:0;pointer-events:none;font-size:var(--step-name);line-height:.8;letter-spacing:-.06em;z-index:2}
-.hero .name .a,.hero .name .b{position:absolute;display:block;overflow:hidden;padding-bottom:.07em}
+.hero .name{position:absolute;inset:0;pointer-events:none;font-size:var(--step-name);line-height:.8;letter-spacing:-.03em;z-index:2}
+.hero .name .a,.hero .name .b{position:absolute;display:block;overflow:hidden;padding:0 .04em .07em 0;margin-right:-.04em}
 .hero .name i{display:block;font-style:normal;transform:translateY(105%);transition:transform 1.1s var(--ease)}
 .hero.on .name i{transform:none}
 .hero .name .a{top:24px;left:var(--m)}
@@ -270,17 +270,18 @@ button.tl-link{background:none;border:0;padding:0;cursor:pointer}
 .card .btn:focus-visible{outline-offset:-6px}
 
 /* ---------- footer ---------- */
-footer{position:relative;min-height:100svh;background:var(--bg);overflow:hidden;padding:var(--m);display:grid;grid-template-columns:repeat(12,1fr);gap:var(--gap);align-content:start}
+footer{container-type:inline-size;min-height:100svh;background:var(--bg);overflow:hidden;padding:var(--m);display:grid;grid-template-columns:repeat(12,1fr);grid-template-rows:auto auto 1fr auto;gap:var(--gap)}
 footer h2{grid-column:1 / 8;font-size:var(--step-head);max-width:12ch;margin-bottom:32px}
 footer .go{grid-column:1 / 8;grid-row:2}
 footer ul{grid-column:10 / 13;grid-row:1 / 3;list-style:none;margin:0;padding:0;display:flex;flex-direction:column;align-items:flex-start;font-size:var(--step-body);font-weight:500}
 footer ul a{display:inline-flex;align-items:center;min-height:44px;min-width:44px;text-decoration:none}
 footer ul a:active,footer .legal a:active{opacity:.7}
 footer ul a:hover{text-decoration:underline;text-underline-offset:.3em}
-footer .legal{position:absolute;left:var(--m);right:var(--m);bottom:calc(30vw * .66);display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:var(--step-small);font-weight:500}
+footer .legal{grid-column:1 / -1;grid-row:3;align-self:end;margin-top:48px;display:flex;justify-content:space-between;align-items:center;gap:16px;font-size:var(--step-small);font-weight:500}
 footer .legal a{display:inline-flex;align-items:center;min-height:44px;text-decoration:none}
 footer .legal a:hover{text-decoration:underline;text-underline-offset:.3em}
-footer .word{position:absolute;left:calc(var(--m) - .05em);bottom:0;font-size:30vw;font-weight:600;letter-spacing:-.07em;line-height:.8;white-space:nowrap;transform:translateY(22%);color:var(--ink)}
+/* 4.2 is the width of "BO Studio" in em at this letter spacing: the name always fills the line and no more */
+footer .word{grid-column:1 / -1;grid-row:4;margin-left:-.068em;padding-top:.06em;font-size:calc(100cqi / 4.2);font-weight:600;letter-spacing:-.03em;line-height:.8;white-space:nowrap;color:var(--ink)}
 
 /* ---------- tablet & phone ---------- */
 @media (max-width:1100px){
@@ -371,8 +372,8 @@ footer .word{position:absolute;left:calc(var(--m) - .05em);bottom:0;font-size:30
   footer h2{font-size:11vw}
   footer .go .btn{width:100%}
   footer ul{flex-direction:row;flex-wrap:wrap;gap:0 18px;margin-top:20px}
-  footer .word{font-size:38vw}
-  footer .legal{bottom:calc(38vw * .64);flex-direction:column;align-items:flex-start;gap:0}
+  footer .word{margin-top:20px;font-size:calc(100cqi / 2.72);line-height:.85;white-space:normal}
+  footer .legal{align-self:stretch;margin-top:auto;padding-top:40px;flex-direction:column;align-items:flex-start;gap:0}
 }
 @media (prefers-reduced-motion:reduce){
   *,*::before,*::after{animation:none!important;transition:none!important;scroll-behavior:auto!important}
