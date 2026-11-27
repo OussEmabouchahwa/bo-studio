@@ -1,0 +1,58 @@
+# BO Studio
+
+> Freelance studio of Oussema Bouchahwa in Sfax, Tunisia: video editing, AI agents and automation, websites and mobile apps, for creators, agencies and small businesses, mostly in France.
+
+Oussema Bouchahwa is a computer engineering student (IPSAS Sfax), full-stack developer and video editor, with about 1.5 years of development work across 3 companies. Languages: Arabic, English, French. Time zone: UTC+1.
+
+## Services and prices (euros)
+
+### Video editing
+
+- Single reels: €15
+- Pack of 8 reels per month: €95 per month
+- 1 podcast episode into 5 clips: €55
+- YouTube video up to 15 min: from €40
+
+### AI agents and automation
+
+- Simple automation: from €90
+- AI assistant: email, leads, FAQ: from €180
+- Monitoring and fixes: €18 per month
+
+### Websites and apps
+
+- Landing page: from €150
+- Business site, up to 5 pages: from €270
+- Flutter mobile app: from €360
+- Online store: from €480
+
+## How an order works
+
+- A quote within 24 hours.
+- 50% deposit to start and the balance on delivery, by international bank transfer. Monitoring and fixes has no deposit.
+- Delivery: a reel in 48 hours, an automation in 3 to 7 days, a landing page in about a week. Other work gets a date in the quote.
+- Video: 2 rounds of changes included, and a free test reel on request.
+- AI agents: a working demo before the balance is paid.
+- Websites: built with React, with Vercel hosting set up. Mobile apps are built with Flutter, on request.
+- Agencies: white label.
+
+## Pages
+
+- [Page en français](https://oussemabouchahwa.github.io/bo-studio/fr/): services, tarifs, projets et contact.
+- [Page in English](https://oussemabouchahwa.github.io/bo-studio/en/): services, prices, projects and contact.
+
+## Projects
+
+- [Nizam](https://github.com/OussEmabouchahwa/life-app): Flutter daily planner that works offline.
+- [Gmail AI Assistant](https://github.com/OussEmabouchahwa/Gmail-AI-Assistant): Apps Script and Gemini agent that sends a morning email digest on Telegram.
+- [Marlow & Reed](https://e-comerce-ten-rust.vercel.app): footwear store.
+- [Weather bot](https://github.com/OussEmabouchahwa/weather_bot.py): scheduled forecast posted to Telegram.
+
+## Contact
+
+- Email: oussema.bouchahwa@ipsas.tn
+- [WhatsApp](https://wa.me/21653106229): +216 53 106 229
+- [Instagram](https://www.instagram.com/oussema.edits/)
+- [LinkedIn](https://www.linkedin.com/in/bouchahwa-oussema-0216b3264/)
+- [GitHub](https://github.com/OussEmabouchahwa)
+- [Portfolio](https://oussemabouchahwa.vercel.app)

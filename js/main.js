@@ -5,8 +5,8 @@
   function L(){return root.lang==='fr'?'fr':'en'}
   function setLang(l){root.lang=l;document.querySelectorAll('.langs button').forEach(function(b){b.setAttribute('aria-pressed',String(b.dataset.set===l))});try{localStorage.setItem('ob-lang',l)}catch(e){}meta();translate('alt','data-fr-alt');translate('aria-label','data-fr-label');renderTicket(false);snd();heroLabel()}
   /* the tab title and description follow the language */
-  var M={en:['BO Studio · Reels, AI agents and websites','BO Studio: reels, AI agents and websites for creators, agencies and small businesses. Reels from €15, a quote within 24 hours.'],
-    fr:['BO Studio · Reels, agents IA et sites web','BO Studio\u00a0: reels, agents IA et sites web pour créateurs, agences et petites entreprises. Reels dès 15\u00a0€, devis sous 24\u00a0h.']};
+  var M={en:['BO Studio · Video editing, AI agents and websites','BO Studio: reel editing, AI agents, websites and apps for creators, agencies and small businesses. Reels from €15, a quote within 24 hours.'],
+    fr:['BO Studio · Montage vidéo, agents IA et sites web','BO Studio\u00a0: montage de reels, agents IA, sites web et applications pour créateurs, agences et petites entreprises. Reels dès 15\u00a0€, devis sous 24\u00a0h.']};
   function meta(){var m=M[L()];document.title=m[0];document.querySelector('meta[name="description"]').setAttribute('content',m[1])}
   /* picture descriptions and control names: English in the HTML, French in a data attribute */
   function translate(attr,frAttr){document.querySelectorAll('['+frAttr+']').forEach(function(el){var keep='data-en-'+attr;if(!el.hasAttribute(keep))el.setAttribute(keep,el.getAttribute(attr)||'');el.setAttribute(attr,el.getAttribute(L()==='fr'?frAttr:keep))})}

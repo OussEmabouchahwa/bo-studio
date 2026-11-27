@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9" xmlns:xhtml="http://www.w3.org/1999/xhtml">
+  <url>
+    <loc>https://oussemabouchahwa.github.io/bo-studio/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://oussemabouchahwa.github.io/bo-studio/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oussemabouchahwa.github.io/bo-studio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oussemabouchahwa.github.io/bo-studio/"/>
+  </url>
+  <url>
+    <loc>https://oussemabouchahwa.github.io/bo-studio/fr/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://oussemabouchahwa.github.io/bo-studio/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oussemabouchahwa.github.io/bo-studio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oussemabouchahwa.github.io/bo-studio/"/>
+  </url>
+  <url>
+    <loc>https://oussemabouchahwa.github.io/bo-studio/en/</loc>
+    <lastmod>2026-11-27</lastmod>
+    <xhtml:link rel="alternate" hreflang="fr" href="https://oussemabouchahwa.github.io/bo-studio/fr/"/>
+    <xhtml:link rel="alternate" hreflang="en" href="https://oussemabouchahwa.github.io/bo-studio/en/"/>
+    <xhtml:link rel="alternate" hreflang="x-default" href="https://oussemabouchahwa.github.io/bo-studio/"/>
+  </url>
+</urlset>
